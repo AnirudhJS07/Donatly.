@@ -1,0 +1,91 @@
+body{
+    /* background-image: url("signup1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .formbuild h1{
+    color: #000;
+    padding: 0;
+    margin-top: 0;
+    font-weight: bolder;
+    height: 20px;
+    margin-bottom: 40px;
+  
+  
+  }
+  .formbuild{
+    margin-top: 30px;
+    width: 350px;
+    height: 630px;
+    background-color: rgba(255, 245, 174);
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px;
+    border-radius: 20px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+  }
+  .formbuild input{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .formbuild input[type="text"]{
+    border: bold,black;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .formbuild input[type="email"]{
+    border: bold,black;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .formbuild input[type="number"]{
+    border: bold,black;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .formbuild input[type="date"]{
+    border: bold,black;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .formbuild input[type="submit"]
+  {
+    border-radius: 20px;
+    border: bold,black;
+    outline: none;
+    height: 40px;
+    background: white;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .formbuild input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ff8c00;
+    color: #000;
+  }

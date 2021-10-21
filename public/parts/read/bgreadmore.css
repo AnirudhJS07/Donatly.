@@ -1,0 +1,99 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+  body 
+    {
+    margin: 0; 
+    padding: 0;
+    background-color: white;
+    opacity: 0.7;
+    align-items: center;
+    font-family: 'nunito',sans-serif;
+    }
+    .container
+    {
+        margin:60px;
+        padding:10px;
+        align-items: center;
+        display: flex;
+        flex-direction:column;
+        color: whitesmoke;
+        background-color: rgb(113, 201, 206);
+        box-shadow: 3px 3px 10px #888888;
+    }
+
+   .container #part 
+  {
+   display:inline-flex;
+   margin: 20px;
+  }
+
+    .container #part img{
+      width: 300px;
+      height: 300px;
+      margin:  20px;
+      box-shadow: 10px 10px  8px #888888;
+      align-self: center;
+    }
+    .image
+    {
+      margin-top: 100px;
+    }
+    .container #part-> h3
+    {
+      text-align: left;
+      font-weight: 800;
+    }
+    .btn
+    {
+      margin: 0 100px;
+    }
+    .question
+    {
+      margin: 20px;
+      padding: 10px;
+      text-align: left;
+    }
+   .FAQ__accordian {
+  width: 100%;
+}
+.FAQ__title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+}
+
+.FAQ__visible {
+  background-color: #303030;
+  border-top: 1px solid black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.FAQ__visible > p {
+  margin: 1rem;
+}
+.FAQ__list__container {
+  border-top: 8px solid #222;
+  padding: 2rem 0;
+}
+.FAQ__heading {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem 3rem;
+}
+
+.FAQ__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+

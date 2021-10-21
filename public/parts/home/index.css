@@ -1,0 +1,52 @@
+body {
+    margin: 0; 
+    padding: 0;
+    background-color: white;
+    border: white;
+    border-width: 10 px;
+    background:url(Beach.gif);
+    fill-opacity: 0.2;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+}
+ .text {
+    align-content: center;
+    text-align: center;
+    font-size: 180px; 
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    opacity: 0.8;   
+}
+ .heading{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+ }
+ .para {
+    align-content: center;
+    text-align: center;
+    font-size: 50px; 
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    opacity: 1.0;
+ }
+ .description {
+    align-content: center;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 10%;
+    font-size: 20px; 
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    opacity: 1.0;
+ }
+ .buttons {
+    align-items: center;
+ }
+
