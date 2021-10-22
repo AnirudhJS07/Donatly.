@@ -1,0 +1,73 @@
+<%- include("partials/header"); -%>
+
+<br><br><br><br><br><br>
+
+<body>
+    <div class="oxygencylindersheader">
+        <form>
+            <h1>Availabilty of Oxygen cylinders</h1>
+            <div class="form-box">
+                <input type="text" class="search-field Country" placeholder="Country">
+                <input type="text" class="search-field State" placeholder="State">
+                <input type="text" class="search-field District" placeholder="District">
+                <button class="search-btn"
+                type="button">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<style>
+    .oxygencylindersheader{
+    height: 60vh;
+    background-color: #fff;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Raleway',sans-serif;
+    opacity: 0.9;
+}
+.oxygencylindersheader h1{
+   color:#000;
+   margin-bottom: 70px; 
+   font-size: 45px;
+   letter-spacing: 2px;
+   text-align: center;
+}
+.search-field{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+}
+.Country{
+    width: 350px;
+}
+.State{
+    width: 300px;
+}
+.District{
+    width: 300px;
+}
+.search-btn{
+    height:50px;
+    width:150px;
+    background: rgb(241, 85, 85);
+    border:none;
+    color:#000;
+    border-radius:25px;
+}
+.search-btn:hover{
+    background: hsl(353, 100%, 50%);
+    cursor: pointer;
+}
+.form-box{
+    background:rgba(0,0,0,0.7);
+    padding: 30px;
+}
+</style>
+
+<%- include("partials/footer"); -%>
