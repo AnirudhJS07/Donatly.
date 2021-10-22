@@ -37,6 +37,10 @@ app.get("/read-more", function(req, res){
   res.render("readmore");
 });
 
+app.get("/bloodbanks", function(req, res){
+  res.render("bloodbanks");
+});
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
