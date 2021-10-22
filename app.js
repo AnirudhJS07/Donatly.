@@ -37,7 +37,6 @@ app.get("/read-more", function(req, res){
   res.render("readmore");
 });
 
-
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
