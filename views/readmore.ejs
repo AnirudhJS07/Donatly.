@@ -1,45 +1,9 @@
 <%- include("partials/header"); -%>
 
 <br><br><br><br>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Months', 'Organ Donations', 'Blood Donations'],
-          ['Jan',  1000,      400],
-          ['Feb',  1170,      460],
-          ['Mar',  660,       1120],
-          ['April',  1030,      540],
-          ['May',  1005,      340],
-          ['June',  1070,      720],
-          ['July',  1200,      740],
-          ['Aug',  1130,      240],
-          ['Sep',  1630,      1540],
-          ['Oct',  1530,      940],
-          ['Nov',  1000,      640],
-          ['Dec',  1090,      590]
-        ]);
-
-        var options = {
-          title: 'Donations in months',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
-
-<script src="public\assets\js\readmore.js"></script>
-<script src="public\assets\js\columngraph.js"></script>
-<div class="container">
+<div class="read-container">
     <div class=" part-1" id="part">
-        <div class="image">
+        <div class="read-image">
         <img src="http://dattmedi.com/blog/wp-content/uploads/2018/11/DMPL-Blood-Transfusion-1024x587.png" >
     </div>
      <div class="question">
@@ -60,7 +24,7 @@
     </div>
 </div>
     <div class=" part-2" id="part">
-        <div class="image">
+        <div class="read-image">
         <img src="https://www.hema-quebec.qc.ca/userfiles/image/Your-blood-type-difference(1).jpg">
     </div><div class="question">
         <h3>BENEFITS OF DONATING BLOOD</h3>
@@ -78,7 +42,7 @@
     </div>
     
     <div class="part-3" id="part">
-        <div class="image">
+        <div class="read-image">
             <img src="https://slideplayer.com/slide/7432608/24/images/16/ADVERSE+EFFECTS+%28TRANSFUSION+REACTIONS%29+-+Immune+mediated.jpg">
         </div>
         <div class="question">
@@ -102,7 +66,7 @@
         </div>
     </div>
         <div class="part-4" id="part">
-            <div class="image">
+            <div class="read-image">
                 <img src="https://images.medindia.net/amp-images/health-images/organ-donation-day-2017.jpg">
             </div>
             <div class="question">
@@ -124,7 +88,7 @@
         </div>
 
         <div class=" part-5" id="part">
-          <div class="image">
+          <div class="read-image">
           <img src="https://healthminds.in/blog/wp-content/uploads/2015/08/organ-donate-800x425.jpg">
       </div><div class="question">
           <h3>BENEFITS OF DONATING ORGANS</h3>
@@ -144,7 +108,7 @@
       </div>
 
       <div class=" part-6" id="part">
-        <div class="image">
+        <div class="read-image">
         <img src="https://ih1.redbubble.net/image.1110976489.4401/flat,750x,075,f-pad,750x1000,f8f8f8.jpg">
     </div><div class="question">
         <h3>SIDE-EFFECTS OF DONATING ORGANS</h3>
@@ -162,7 +126,7 @@
     </div>
         
     <div class=" part-1" id="part">
-      <div class="image">
+      <div class="read-image">
       <img src="https://www.donoralliance.org/wp-content/uploads/2018/12/Organ-and-Tissue-donation-Process.png" >
   </div>
    <div class="question">
@@ -254,6 +218,74 @@
 <div id="curve_chart" style="width: 900px; height: 500px"></div>
 <div id="chart_div"></div>
 </div>
+<script >
+  
+let accordian = document.getElementsByClassName("FAQ__title");
+
+for (let i=0;i<accordian.length;i++)
+{
+	accordian[i].addEventListener("click",function () {
+
+		if(this.childNodes[1].classList.contains("fa-plus")){
+			this.childNodes[1].classList.remove("fa-plus");
+			this.childNodes[1].classList.add("fa-times");
+		}
+		else
+		{
+			this.childNodes[1].classList.remove("fa-times");
+			this.childNodes[1].classList.add("fa-plus");
+		}
+		//height
+		let content=this.nextElementSibling;
+		if(content.style.maxHeight)
+		{
+			content.style.maxHeight=null;
+		}
+		else
+		{
+			content.style.maxHeight=content.scrollHeight+"px";
+		}
+	});
+	
+}
+
+
+</script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="public\assets\js\columngraph.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Months', 'Organ Donations', 'Blood Donations'],
+          ['Jan',  1000,      400],
+          ['Feb',  1170,      460],
+          ['Mar',  660,       1120],
+          ['April',  1030,      540],
+          ['May',  1005,      340],
+          ['June',  1070,      720],
+          ['July',  1200,      740],
+          ['Aug',  1130,      240],
+          ['Sep',  1630,      1540],
+          ['Oct',  1530,      940],
+          ['Nov',  1000,      640],
+          ['Dec',  1090,      590]
+        ]);
+
+        var options = {
+          title: 'Donations in months',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
 
 <%- include("partials/footer"); -%>
