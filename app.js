@@ -41,6 +41,10 @@ app.get("/bloodbanks", function(req, res){
   res.render("bloodbanks");
 });
 
+app.get("/organbanks", function(req, res){
+  res.render("organbanks");
+});
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
