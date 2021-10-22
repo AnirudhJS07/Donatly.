@@ -8,9 +8,16 @@
 
 
 
-
 <script src="http://websdk.sawolabs.com/sawo.min.js"></script>    
                     <script>
+
+                    const payload = sessionStorage.getItem("payload");
+                        if (payload) {
+                        // If the payload is available, that means the user has logged in already.
+                        // So redirecting back to "/login"
+                        window.location.href = "/success";
+                        }
+
                         var config = {
                             // should be same as the id of the container created on 3rd step
                             containerID: "sawo-container",
@@ -20,7 +27,12 @@
                             apiKey: "23dc4c02-bed2-4557-bb9c-7b2e18d28824",
                             // Add a callback here to handle the payload sent by sdk
                             onSuccess: (payload) => {
-                                console.log(payload)
+                                // console.log(payload);
+
+                                // Storing the payload in sessionStorage
+                                sessionStorage.setItem("payload", JSON.stringify(payload));
+                                // Redirecting to "/success"
+                                window.location.href = "/form";
                             },
                         };
                         var sawo = new Sawo(config);

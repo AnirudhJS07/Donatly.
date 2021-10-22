@@ -1,0 +1,135 @@
+<%- include("partials/header"); -%>
+<br><br><br>
+<form action="/register" method="post" class="my-form">
+    <div class="container" id="form">
+        <h1 id="form-header">Please fill in the following details to donate Blood/Organ(s)!</h1>
+        <ul>
+            <li>
+                <select>
+                    <option selected disabled>-- Please choose type of Donation --</option>
+                    <option>Blood Donation</option>
+                    <option>Organ Donation</option>
+                </select>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="tel" placeholder="Phone" required>
+                    <input type="password" placeholder="Password" required>
+                </div>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="date" placeholder="Date of Birth" required>
+                    <select>
+                        <option selected disabled>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Transgender</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <select>
+                        <option selected disabled>Blood Group type</option>
+                        <option>A</option>
+                        <option>B</option>
+                        <option>AB</option>
+                        <option>O</option>
+                    </select>
+                    <select>
+                        <option selected disabled>Blood Group - Rh +ve/-ve</option>
+                        <option>+ve</option>
+                        <option>-ve</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <textarea placeholder="Any previous Health Concerns(Fill N/A if none)" required></textarea>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="number" id="height" placeholder="Height(in cm)" required>
+                    <input type="number" id="weight" placeholder="Weight(in kg)" required>
+                </div>
+            </li>
+            <li>
+                <br>
+                <label>I have been diagnosed with the following:</label>
+                <select>
+                    <option>Not Applicable</option>
+                    <option>Many of the following</option>
+                    <option>HIV-AIDS</option>
+                    <option>STIs(Syphilis/Gonnorrhoea/HPV/Chlamydia/Herpes)</option>
+                    <option>Hepatitis-B</option>
+                    <option>Cancer</option>
+                </select>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="text" placeholder="Father's Name" required>
+                    <input type="text" placeholder="Mother's Name" required>
+                </div>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <select>
+                        <option selected disabled>Identity Proof(Upload in next field)</option>
+                        <option>Aadhar Card</option>
+                        <option>Ration Card</option>
+                        <option>PAN Card</option>
+                        <option>Voter ID Card</option>
+                        <option>Passport</option>
+                    </select>
+                    <input type="file" placeholder="Upload Documents" required>
+                </div>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="text" placeholder="Nominee Name 1" required>
+                    <input type="text" placeholder="Nominee Name 2" required>
+                </div>
+            </li>
+            <li>
+                <textarea placeholder="Address" required></textarea>
+            </li>
+            <li>
+                <div class="grid grid-2">
+                    <input type="number" placeholder="PIN-Code" required>
+                    <input type="text" placeholder="State" required>
+                </div>
+            </li>
+            <li>
+                <input type="checkbox" id="terms">
+                <label for="terms" id="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
+            </li>
+            <li>
+                <div class="grid grid-3">
+                    <div class="required-msg" id="reminder">REQUIRED FIELDS</div>
+                    <button class="btn-grid" type="submit">
+                        <span class="back">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                        </span>
+                        <span class="front">SUBMIT</span>
+                    </button>
+                    <button class="btn-grid" type="reset">
+                        <span class="back">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+                        </span>
+                        <span class="front">RESET</span>
+                    </button>
+                </div>
+            </li>
+        </ul>
+    </div><br>
+</form>
+</body>
+
+</html>

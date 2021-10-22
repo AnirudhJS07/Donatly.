@@ -29,6 +29,10 @@ app.get("/login", function(req, res){
   res.render("login");
 });
 
+app.get("/form", function(req, res){
+  res.render("form");
+});
+
 
 let port = process.env.PORT;
 if (port == null || port == "") {
