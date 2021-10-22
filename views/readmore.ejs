@@ -1,0 +1,259 @@
+<%- include("partials/header"); -%>
+
+<br><br><br><br>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Months', 'Organ Donations', 'Blood Donations'],
+          ['Jan',  1000,      400],
+          ['Feb',  1170,      460],
+          ['Mar',  660,       1120],
+          ['April',  1030,      540],
+          ['May',  1005,      340],
+          ['June',  1070,      720],
+          ['July',  1200,      740],
+          ['Aug',  1130,      240],
+          ['Sep',  1630,      1540],
+          ['Oct',  1530,      940],
+          ['Nov',  1000,      640],
+          ['Dec',  1090,      590]
+        ]);
+
+        var options = {
+          title: 'Donations in months',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+<script src="public\assets\js\readmore.js"></script>
+<script src="public\assets\js\columngraph.js"></script>
+<div class="container">
+    <div class=" part-1" id="part">
+        <div class="image">
+        <img src="http://dattmedi.com/blog/wp-content/uploads/2018/11/DMPL-Blood-Transfusion-1024x587.png" >
+    </div>
+     <div class="question">
+         <h3>WHAT IS BLOOD TRANSFUSION?</h3>
+         <br><br>
+         <p>
+         A blood transfusion provides blood or blood components if you’ve lost blood due to an injury,
+         during surgery or have certain medical conditions that affect blood or its components. 
+        The blood typically comes from donors. Blood banks and healthcare providers ensure transfusions are a safe,
+         low risk treatment..
+         </p>
+     <p>Blood donation is a voluntary procedure that can help save the lives of others. There are several types of blood donation. Each type helps meet different medical needs.</p>
+     <p>Safe blood saves lives. Blood is needed by women with complications during pregnancy and childbirth, children with severe anaemia, often resulting from malaria or malnutrition, accident victims and surgical and cancer patients.</p>
+
+      <p>There is a constant need for a regular supply of blood because it can be stored only for a limited period of time before use. Regular blood donation by a sufficient number of healthy people is needed to ensure that blood will always be available whenever and wherever it is needed.</p>
+
+      <p>Blood is the most precious gift that anyone can give to another person – the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components – red cells, platelets and plasma – which can be used individually for patients with specific conditions.</p>
+    </div>
+</div>
+    <div class=" part-2" id="part">
+        <div class="image">
+        <img src="https://www.hema-quebec.qc.ca/userfiles/image/Your-blood-type-difference(1).jpg">
+    </div><div class="question">
+        <h3>BENEFITS OF DONATING BLOOD</h3>
+        <br><br>
+        <ul>
+        <h4>Donating blood has benefits for your emotional and physical health. According to a report by the Mental Health Foundation, helping others can:</h4>
+        <li><p>Reduce stress</p></li>
+          <li><p>Improve your emotional well-being</p></li>
+        <li><p>Benefit your physical health</p></li>
+        <li><p>Help get rid of negative feelings</p></li>
+        <li><p>Provide a sense of belonging and reduce isolation</p></li>
+        <li> <p>Has found further evidence of the health benefits that come specifically from donating blood.</p></li>
+        </ul>
+    </div>
+    </div>
+    
+    <div class="part-3" id="part">
+        <div class="image">
+            <img src="https://slideplayer.com/slide/7432608/24/images/16/ADVERSE+EFFECTS+%28TRANSFUSION+REACTIONS%29+-+Immune+mediated.jpg">
+        </div>
+        <div class="question">
+            <h3>SIDE EFFECTS OF DONATING BLOOD</h3>
+            <br><br>
+            <p>Blood donation is safe for healthy adults. There’s no risk of contracting disease. New, sterile equipment is used for each donor.</p>
+            <ul>
+                <li>
+                    <p>Some people may feel nauseous, lightheaded, or dizzy after donating blood. If this happens, it should only last a few minutes. You can lie down with your feet up at the until you feel better.</p>
+                     </li>
+                <li>
+                    <p>You may also experience some bleeding at the site of the needle. Applying pressure and raising your arm for a couple of minutes will usually stop this. You may develop a bruise at the site.</p>
+                </li>
+                <li>
+                    <p>Call the blood donation center if:</p>
+                    <p>ou still feel lightheaded, dizzy, or nauseous after drinking, eating, and resting.</p>
+                    <p>You develop a raised bump or continue bleeding at the needle site.</p>
+                    <p>You have arm pain, numbness, or tingling.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <div class="part-4" id="part">
+            <div class="image">
+                <img src="https://images.medindia.net/amp-images/health-images/organ-donation-day-2017.jpg">
+            </div>
+            <div class="question">
+                <h3>WHAT IS ORGAN DONATION?</h3>
+                <br><br>
+            <p>Organ donation is the process of surgically removing an organ 
+              or tissue from one person (the organ donor) and placing it into another person (the recipient). 
+              Transplantation is necessary because the recipient's organ has failed or has been damaged by disease or injury</p>
+              <p>t this moment, more than 113,000 people in the U.S. are waiting for an organ. One more person is added to the national waiting list every 10 minutes.</p>
+
+                <p>Each of these people is in desperate need of a kidney, liver, heart, or other organ. About 20 people a day in the U.S. die before that organ becomes available.</p>
+                
+                <p>Organ donors are always in short supply. There are far more people in need of a transplant than there are people willing to donate an organ.</p>
+                
+                <p>Most of the organs that are available come from deceased donors. When you fill out an organ donor card with your driver's license, you're agreeing to donate all or some of your organs if you die.</p>
+                
+                <p>A smaller number of organs come from healthy people. More than 6,000 transplants from living donors are performed each year.</p>                 
+            </div>      
+        </div>
+
+        <div class=" part-5" id="part">
+          <div class="image">
+          <img src="https://healthminds.in/blog/wp-content/uploads/2015/08/organ-donate-800x425.jpg">
+      </div><div class="question">
+          <h3>BENEFITS OF DONATING ORGANS</h3>
+          <br><br>
+          <ul>
+          <h4>Donating Organs has benefits for your emotional and physical health.</h4>
+          <li><p>Quality of life: Transplants can greatly improve a recipient’s health and quality of life, allowing them to return to normal activities. They can spend more time with family and friends, be more physically active, and pursue their interests more fully. </p></li>
+            <li><p>Increased life span: A kidney transplant dramatically increases the life span of a patient by about 10 years and improves their quality of life. Dialysis, while clearly a life-saving treatment, it is a less-than-perfect replacement for an actual human kidney. In addition, people who undergo a transplant will no longer require weekly dialysis treatments or have the side effects of dialysis such as nausea, vomiting, low blood pressure, muscle cramping, and itchy skin.</p></li>
+          <li><p>Shorter waiting time: Due to the lack of organs available for transplant, patients on the national transplant list often face long wait times (sometimes several years) before they are able to receive a transplant from a deceased donor. Patients who find a suitable living donor do not have to wait on the list.</p></li>
+          <li><p>Better results: Transplant candidates generally have better results when they receive organs from living donors as compared to organs from deceased donors. Often, transplanted organs from living donors have greater longevity than those from deceased donors. Genetic matches between living donors and candidates may lessen the risk of rejection.</p></li>
+          <li><p>Kidneys and Livers Function Almost Immediately: A kidney or liver from a living donor usually functions immediately in the recipient. In uncommon cases, some kidneys from deceased donors do not work immediately, and as a result, the patient may require dialysis until the kidney starts to function.</p></li>
+          <li> <p>For the Living Donor:
+            Positive emotional experiences: The gift of an organ can save the life of a transplant candidate. The experience of providing this special gift to a person in need can serve be a positive aspect of donation.
+            More time with your loved one: Donating an organ can increase the time you have to spend with your loved one as well as the quality of that time.</p></li>
+          </ul>
+      </div>
+      </div>
+
+      <div class=" part-6" id="part">
+        <div class="image">
+        <img src="https://ih1.redbubble.net/image.1110976489.4401/flat,750x,075,f-pad,750x1000,f8f8f8.jpg">
+    </div><div class="question">
+        <h3>SIDE-EFFECTS OF DONATING ORGANS</h3>
+        <br><br>
+        <ul>
+        <h4>For living kidney donors, the remaining kidney will enlarge slightly to do the work that two healthy kidneys share. The liver has the ability to regenerate and regain full function. Lungs and pancreas do not regenerate, but donors usually do not experience problems with reduced function.</h4>
+        <li><p>Risks to the Donor
+          As with any other surgery, there are both short and long term risks involved in living donation.  Surgical complications can include pain, infection, blood loss, blood clots, allergic reactions to anesthesia, pneumonia, injury to surrounding tissue or other organs, and even death.  As transplant surgeries are becoming more common and surgical techniques are advancing, risks involved with living donation continue to decrease.</p></li>
+          
+        <li><p>There has been no national systematic long-term data collection on the risks associated with living organ donation. However, there are studies that are currently gathering such information. Based upon limited information that is currently available, overall risks are considered to be low. Risks can differ among donors and the type of organ.</p></li>
+        <li><p>For kidney donors, there is only a 1% lifetime increase in the donor’s own risk of kidney failure.  To put this into perspective, the general population has a 3% risk for kidney failure.  Overall, there is only a three in 10,000 risk of dying during surgery and  in general donation neither reduces life expectancy nor prevents donors from living normal, healthy lives. Some possible long-term risks of donating a kidney may include high blood pressure (hypertension); large amount of protein in the urine; hernia; organ impairment or failure that leads to the need for dialysis or transplantation.</p></li>
+        <li> <p>Liver transplantation carries greater risk for both the donor and the recipient than kidney transplantation. Some possible long-term risks associated with donating a lobe of the liver may include wound infections; hernia; abdominal bleeding; bile leakage; narrowing of the bile duct; intestinal problems including blockages and tears; organ impairment or failure that leads to the need for transplantation.</p></li>
+        </ul>
+    </div>
+    </div>
+        
+    <div class=" part-1" id="part">
+      <div class="image">
+      <img src="https://www.donoralliance.org/wp-content/uploads/2018/12/Organ-and-Tissue-donation-Process.png" >
+  </div>
+   <div class="question">
+       <h3>WHAT IS TISSUE DONATION?</h3>
+       <br><br>
+       <p>
+        Donated human tissues can be used in many surgical applications, saving and healing lives on a daily basis. 
+        Tissue donation can benefit patients in a number of serious or life-threatening medical situations, including saving patients with severe burns, allowing athletes with torn ligaments or tendons to heal and regain strength, restoring hope and mobility to military men and women who have been injured in combat, and repairing musculoskeletal structures such as teeth, skin, and spinal components.
+       </p>
+   <p>Each year, approximately 58,000 tissue donors provide lifesaving and healing tissue for transplant. Approximately 2.5 million tissue transplants are performed each year. Donate Life America partners with organizations such as the American Association of Tissue Banks to encourage and educate about tissue donation across the country.</p>
+   
+  </div>
+</div>
+
+        <section class="FAQ__list__container">
+   <h1 class="FAQ__heading">Blogs</h1>
+  <div class="FAQ__list">
+  <div class="FAQ__accordian">
+    <button class="FAQ__title">
+      Who can donate an organ?<i class="fal fa-plus"></i>
+    </button>
+    <div class="FAQ__visible">
+        <p></p>
+      <p>
+        Just about anyone, at any age, can become an organ donor. Anyone younger than age18 needs to have the consent of a parent or guardian.
+
+      For organ donation after death, a medical assessment will be done to determine what organs can be donated. Certain conditions, such as having HIV, actively spreading cancer, or severe infection would exclude organ donation.
+
+      Having a serious condition like cancer, HIV, diabetes, kidney disease, or heart disease can prevent you from donating as a living donor.
+
+      Let your transplant team know about any health conditions you have at the beginning of the process. Then they can decide whether you're a good candidate.
+      </p>
+      <br>
+      <p>Read more on <a href="https://www.webmd.com/a-to-z-guides/organ-transplant-donor-information">Blood Donation</a></p>
+    </div>
+  </div>
+ <div class="FAQ__accordian">
+    <button class="FAQ__title">
+      Can i donate blood?<i class="fal fa-plus"></i>
+    </button>
+    <div class="FAQ__visible">
+      <p>
+        There are certain conditions that prevent a person from donating blood temporarily or permanently. Among the temporary conditions are:                            
+<ul>
+<li>Pregnancy</li>                        
+<li>Acute fever</li>
+<li>Recent alcoholic intake</li>
+<li>Ear or body piercing and tattooing</li>
+<li>Surgery</li>
+<h5>Persons with the following  conditions are not allowed to donate blood anytime:</h5>
+
+<li>Cancer</li>                       
+<li>Cardiac disease</li>                       
+<li>Sever lung disease</li>                       
+<li>Hepatitis B and C</li>                       
+<li>HIV infection, AIDS or Sexually Transmitted Diseases (STD)</li>
+<li> risk occupation (e.g. prostitution)</li>
+<li> weight loss of more than 5 kg over 6 months</li>
+<li>Chronic alcoholism</li>
+</ul>
+      </p>
+      <br>
+      <p>Read More on <a href="https://www.webmd.com/a-to-z-guides/organ-transplant-donor-information">I cannot donate blood?</a></p>
+    </div>
+  </div>
+  <div class="FAQ__accordian">
+    <button class="FAQ__title">
+      Should i become an organ donor?<i class="fal fa-plus"></i>
+    </button>
+    <div class="FAQ__visible">
+      <p>
+        As you decide whether to donate an organ as a living donor, weigh the benefits and risks very seriously.
+
+        Get as much information as you can before making a decision. The transplant center should fully explain the organ donation process to you. You should also be assigned an independent donor advocate who will make sure you know your medical rights.
+        
+        Make sure you ask a lot of questions throughout this process. It's important for you to fully understand the surgery and how becoming an organ donor might affect your future health.
+        
+        Finally, remember that this is your decision -- yours alone. Don't let anyone sway that decision. Even if a friend or loved one is very sick, you have to consider how donating an organ might affect your own life. Remember that even though the donation process has started, you have the right to stop it at any time if you change your mind.
+      </p>
+      <br>
+      <p>Read More on<a href="https://junesilny.com/stop-negative-thoughts-5-benefits-of-mind-control/"> Making the decision</a></p>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+<h3 style="text-align: center;">Statistics</h3>
+<div class="stats">
+<div id="curve_chart" style="width: 900px; height: 500px"></div>
+<div id="chart_div"></div>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<%- include("partials/footer"); -%>
