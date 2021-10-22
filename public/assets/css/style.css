@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #f22f46;
+  color: #ee283f;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #00c28e;
+  background: #f52941;
   color: #fff;
 }
 .back-to-top.active {
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   color: #fff;
-  background: #00b383;
+  background: #ee283f;
 }
 .navbar .dropdown ul {
   display: block;
@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1153,7 +1153,7 @@ section {
 }
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #00c28e;
+  color: #f22f46;
   font-size: 18px;
   line-height: 1;
 }
