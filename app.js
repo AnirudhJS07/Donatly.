@@ -18,7 +18,7 @@ require('dotenv').config({ path: '.env' });
 
 // add your username and password in string below
 const mongo = process.env.MONGO_AUTH;
-mongoose.connect(mongo, {useNewUrlParser: true});
+//mongoose.connect(mongo, {useNewUrlParser: true});
 
 const donorSchema = {
   type : String,
@@ -220,6 +220,11 @@ app.get("/blooddonor", function(req, res){
 app.get("/blood_organrecepient", function(req, res){
   res.render("blood_organrecepient");
 });
+
+app.get("/recepients", function(req, res){
+  res.render("recepients");
+});
+
 
 let port = process.env.PORT;
 if (port == null || port == "") {
