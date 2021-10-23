@@ -14,31 +14,31 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - Additionally, there are buttons that redirect you to sections of the web project. 
     - A customized Logo has been created for Donatly. using "Canva" tools.
     
-      a. Myths and Reality
+      1. Myths and Reality
           - Identifying common Myths and spilling the beans, i.e., the Reality.
-      b. Call for Assistance
+      2. Call for Assistance
           - A section for 24*7 customer assistance helpline number.
-      c. Section describing our Services
+      3. Section describing our Services
           - We focus on creating and expanding a virtual army of blood/organ donating volunteers who could be searched and contacted further by the patients in times of need.
-      d. Banks Nearby
+      4. Banks Nearby
           - Blood Banks
           - Organ Banks
           - Hospitals Nearby
           - Info on Oxygen Cylinders
-      e. Section on Events/News
+      5. Section on Events/News
           - More information is always better than less. 
           - When people know the reason things are happening, even if it's bad news, they can adjust their expectations and react accordingly. 
           - Keeping people in the dark only serves to stir negative emotions.
-      f. Section on Testimonials
+      6. Section on Testimonials
           - This section describes testimonies from past/present donors and recipients.
-      g. About the Team Section
+      7. About the Team Section
           - Contains Images and Portfolios of all members in the Team.
           - Linked with GitHub, LinkedIn and Instagram of all Team Members.
           - Hover option on cursor proximity.
-      h. Contact 
+      8. Contact 
           - Methods on how to contact us for doing donations and receiving donations.
           - Includes - Location on Map, Phone, EMail, Form for Drafting Message(Responsive).
-      i. Footer
+      9. Footer
           - Includes a gist of what the page consists.
       
 2. Read More
