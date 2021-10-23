@@ -3,6 +3,28 @@
 
 <body>
     <h2 style="text-align: center; font-weight: bolder;">DONATE US</h2>
+
+    <style>
+        .donate-form{
+            text-align: center;
+            padding: 0.5rem;
+        }
+        .donate-form input{
+            padding: 0.5rem;
+            color: red;
+
+        }
+    </style>
+    <br>
+    <form class="donate-form" action="/donateus" method="post">
+        <input type="text" placeholder="name" name="name">
+        <br><br>
+        <input type="number" placeholder="value to doante" name="amount">
+        <br><br>
+        <button class="btn btn-outline-danger" type="submit"> Donate Us</button>
+      </form>
+    <br>
+
     <h6 style="text-align: center;margin-right: -70px;">Make a gift</h6>
     <h4 style="text-align: center;margin-top: 70px;">Thank you for supporting our
         life-saving work!</h4>
