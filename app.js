@@ -225,6 +225,10 @@ app.get("/recepients", function(req, res){
   res.render("recepients");
 });
 
+app.get("/donateus", function(req, res){
+  res.render("donateus");
+});
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
