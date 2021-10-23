@@ -359,7 +359,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 #hero .btn-get-started:hover {
-  background: #f22f46;
+  background: red;
   border: 2px solid #f22f46;
 }
 @media (min-width: 1024px) {
