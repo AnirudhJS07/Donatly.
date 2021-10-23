@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-require('dotenv').config();
+require('dotenv').config({ path: '.env' });
 
 // add your username and password in string below
 const mongo = process.env.MONGO_AUTH;
