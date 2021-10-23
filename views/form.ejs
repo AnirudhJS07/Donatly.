@@ -1,10 +1,128 @@
-<%- include("partials/header"); -%>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta name=”monetization” content=”$ilp.uphold.com/7Y8r3W8GwAY4”>
+
+  <title>DONATLY - Save lives,Recycle Yourself</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  
+  <link href="assets/css/form.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/my.css">
+
+  <!-- web monitization : removing Adds -->
+  <script>
+    const adCode = '<div style="border:1px solid #f00;color:red;margin:20px">Ad! Buy product A! Ad!</div>'
+    function showAds () {
+      document.getElementById('ad').innerHTML = adCode
+    }
+
+    function removeAds () {
+      document.getElementById('ad').remove()
+    }
+
+    let hasPaid = false
+    if (document.monetization) {
+      document.monetization.addEventListener('monetizationstart', () => {
+        hasPaid = true
+        removeAds()
+      })
+    }
+
+    window.addEventListener('load', () => {
+      if (!document.monetization) {
+        showAds()
+      } else {
+        setTimeout(() => {
+          if (!hasPaid) {
+            showAds()
+          }
+        }, 3000)
+      }
+    })
+  </script>
+  <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(206431)</script> 
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container">
+      <div class="header-container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <h1 class="text-light"><a href="index.html"><span>Donatly</span></a></h1>
+          <!-- Uncomment below if you prefer to use an image logo 
+          <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="/#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="/#why-us">Read</a></li>
+            <li><a class="nav-link scrollto" href="/#services">Globe</a></li>
+            <li><a class="nav-link scrollto " href="/#portfolio">Events/News</a></li>
+            <li><a class="nav-link scrollto" href="/#team">Team</a></li>
+            <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Donate Us </a></li>
+                <li class="dropdown"><a href="#"><span>Banks nearby</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="/organbanks">Organ Bank</a></li>
+                    <li><a href="/bloodbanks">Blood Bank</a></li>
+                  </ul>
+                </li>
+                <li><a href="/hospitals">Hospitals</a></li>
+                <li><a href="/oxygencylinders">Oxygen Resources</a></li>
+                <li><a href="/#testimonials">Testimonials</a></li>
+                <li><a href="#">Test your fitness</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+            <li><a class="getstarted scrollto" href="/login">Login</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+      </div><!-- End Header Container -->
+    </div>
+    <br>
+  </header><!-- End Header -->
+
+  
 <br><br><br>
-<form action="/register" method="post" class="my-form">
+<form action="/form" method="post" class="my-form">
     <div class="container" id="form">
         <h1 id="form-header">Please fill in the following details to donate Blood/Organ(s)!</h1>
         <ul>
-            <li>
+            <li name="type">
                 <select>
                     <option selected disabled>-- Please choose type of Donation --</option>
                     <option>Blood Donation</option>
@@ -13,20 +131,20 @@
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
+                    <input name="name" type="text" placeholder="Name" required>
+                    <input name="email" type="email" placeholder="Email" required>
                 </div>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="tel" placeholder="Phone" required>
-                    <input type="password" placeholder="Password" required>
+                    <input name="phone" type="tel" placeholder="Phone" required>
+                    <input name="password" type="password" placeholder="Password" required>
                 </div>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="date" placeholder="Date of Birth" required>
-                    <select>
+                    <input name="dob" type="date" placeholder="Date of Birth" required>
+                    <select name="gender">
                         <option selected disabled>Gender</option>
                         <option>Male</option>
                         <option>Female</option>
@@ -37,14 +155,14 @@
             </li>
             <li>
                 <div class="grid grid-2">
-                    <select>
+                    <select name="bloodGroup">
                         <option selected disabled>Blood Group type</option>
                         <option>A</option>
                         <option>B</option>
                         <option>AB</option>
                         <option>O</option>
                     </select>
-                    <select>
+                    <select name="rh">
                         <option selected disabled>Blood Group - Rh +ve/-ve</option>
                         <option>+ve</option>
                         <option>-ve</option>
@@ -52,18 +170,18 @@
                 </div>
             </li>
             <li>
-                <textarea placeholder="Any previous Health Concerns(Fill N/A if none)" required></textarea>
+                <textarea name="previousc" placeholder="Any previous Health Concerns(Fill N/A if none)" required></textarea>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="number" id="height" placeholder="Height(in cm)" required>
-                    <input type="number" id="weight" placeholder="Weight(in kg)" required>
+                    <input name="height" type="number" id="height" placeholder="Height(in cm)" required>
+                    <input name="weight" type="number" id="weight" placeholder="Weight(in kg)" required>
                 </div>
             </li>
             <li>
                 <br>
                 <label>I have been diagnosed with the following:</label>
-                <select>
+                <select name="previousd">
                     <option>Not Applicable</option>
                     <option>Many of the following</option>
                     <option>HIV-AIDS</option>
@@ -74,13 +192,13 @@
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="text" placeholder="Father's Name" required>
-                    <input type="text" placeholder="Mother's Name" required>
+                    <input name="fatherN" type="text" placeholder="Father's Name" required>
+                    <input name="motherN" type="text" placeholder="Mother's Name" required>
                 </div>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <select>
+                    <select name="identity">
                         <option selected disabled>Identity Proof(Upload in next field)</option>
                         <option>Aadhar Card</option>
                         <option>Ration Card</option>
@@ -88,26 +206,26 @@
                         <option>Voter ID Card</option>
                         <option>Passport</option>
                     </select>
-                    <input type="file" placeholder="Upload Documents" required>
+                    <input name="document" type="file" placeholder="Upload Documents" required>
                 </div>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="text" placeholder="Nominee Name 1" required>
-                    <input type="text" placeholder="Nominee Name 2" required>
+                    <input name="nominee1" type="text" placeholder="Nominee Name 1" required>
+                    <input name="nominee2" type="text" placeholder="Nominee Name 2" required>
                 </div>
             </li>
             <li>
-                <textarea placeholder="Address" required></textarea>
+                <textarea name="address" placeholder="Address" required></textarea>
             </li>
             <li>
                 <div class="grid grid-2">
-                    <input type="number" placeholder="PIN-Code" required>
-                    <input type="text" placeholder="State" required>
+                    <input name="pincode" type="number" placeholder="PIN-Code" required>
+                    <input name="state" type="text" placeholder="State" required>
                 </div>
             </li>
             <li>
-                <input type="checkbox" id="terms">
+                <input name="terms" type="checkbox" id="terms">
                 <label for="terms" id="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
             </li>
             <li>
