@@ -134,21 +134,33 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-user-x"></i>
                     <h4>Organ donation can severely impact your health</h4>
-                    <p>Recovery periods vary, but within three months, most donors will return to their pre-donation health. For instance,  after donating a portion of your liver, cells in the remaining lobe regenerate or grow back to the original size. After a kidney donation, one kidney can still effectively remove waste from the body.</p>
+                    <p>Recovery periods vary, but within three months, most donors will return to their pre-donation health.
+                      <div id="exclusive" class="hiddenweb">
+                        For instance,  after donating a portion of your liver, cells in the remaining lobe regenerate or grow back to the original size. After a kidney donation, one kidney can still effectively remove waste from the body.
+                      </div>
+                    </p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bxs-skull"></i>
                     <h4>Organ/tissue removal will affect cremation/burial arrangements.</h4>
-                    <p>The removal of organs or tissues will not interfere with customary funeral or burial arrangements. The appearance of the body is not altered.  A super specialized surgical transplant team removes the organs and tissues which can be transplanted in other patients.t</p>
+                    <p>The removal of organs or tissues will not interfere with customary funeral or burial arrangements. The appearance of the body is not altered.
+                       <div id="exclusive" class="hiddenweb">
+                       A super specialized surgical transplant team removes the organs and tissues which can be transplanted in other patients.
+                       </div>
+                      </p>
                   </div>
                 </div>
                 <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bx-pulse"></i>
                     <h4>A history of medical illness will prevent me from becoming an organ donor.</h4>
-                    <p>Very few medical conditions automatically disqualify you from donating organs. Doctors evaluate each potential donor on a case-by-case basis to ensure the safety of transplant. Despite former diseases, certain organs may be healthy and a match for transplant. For instance, those who have undergone cancer may still be able to donate their eyes. Advances in medicine continue to allow more and more people to be donors.</p>
+                    <p>Very few medical conditions automatically disqualify you from donating organs. Doctors evaluate each potential donor on a case-by-case basis to ensure the safety of transplant. Despite former diseases, certain organs may be healthy and a match for transplant.
+                      <div id="exclusive" class="hiddenweb"> 
+                        For instance, those who have undergone cancer may still be able to donate their eyes.Advances in medicine continue to allow more and more people to be donors.
+                      </div>
+                      </p>
                   </div>
                 </div>
               </div>
@@ -158,6 +170,18 @@
 
       </div>
     </section><!-- End Why Us Section -->
+
+    <script>
+      if (document.monetization) {
+        document.monetization.addEventListener('monetizationstart', () => {
+          document.getElementById('exclusive').classList.remove('hiddenweb')
+        })
+        console.log("monetized site");
+      }
+      else{
+        console.log("no web monetzation");
+      }
+    </script>
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">

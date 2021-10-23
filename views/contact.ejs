@@ -1,0 +1,28 @@
+<%- include("partials/header"); -%>
+<br><br><br><br><br>
+<style>
+    .response{
+        justify-content: center;
+        text-align: center;
+    }
+    .response h1{
+        color: red;
+    }
+    
+    .response a{
+        color: black;
+    }
+</style>
+
+<div class="response">
+    <h1><%= responseHead %></h1>
+    <h2><%= responseBody %></h2>
+
+    <div class=" btn btn-outline-danger back">
+        <a href="/">Go To home</a>
+    </div>
+</div>
+
+
+<br><br>
+<%- include("partials/footer"); -%>

@@ -51,8 +51,8 @@ const donorSchema = {
 const contactSchema = {
   name: String,
   email: String,
-  reason: String,
-  detail: String
+  subject: String,
+  message: String
 };
 
 const User = mongoose.model("User", donorSchema );
@@ -104,17 +104,17 @@ app.post("/form", function(req, res){
 app.post("/contact", function(req, res){
 
   const contact = new Contact({
-    name: req.body.contactName,
-    email: req.body.contactEmail,
-    reason: req.body.contactReason,
-    detail: req.body.ContactBody
+    name: req.body.name,
+    email: req.body.email,
+    subject: req.body.subject,
+    message: req.body.message
   });
 
   contact.save(function(err){
     if (!err){
       res.render("contact" ,{
-      responseHead: "Sucess",
-      responseBody: "we will revert back to you within 7 working days" 
+      responseHead: "Success",
+      responseBody: "We will revert back to you within 7 working days" 
     });
   }
   else{
@@ -164,7 +164,7 @@ app.post("/newsletter",function(request,res){
           console.log(data.error_count);
       }
       else{
-          res.send("sucess")
+          res.send("success")
       }
 
   })
