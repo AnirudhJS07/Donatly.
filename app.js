@@ -7,6 +7,9 @@ const mongoose = require('mongoose');
 const https = require("https");
 const { url } = require("inspector");
 
+
+require('dotenv').config({ path: '.env' });
+
 const app = express();
 
 app.set('view engine', 'ejs');
@@ -14,7 +17,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-require('dotenv').config({ path: '.env' });
 
 // add your username and password in string below
 const mongo = process.env.MONGO_AUTH;
