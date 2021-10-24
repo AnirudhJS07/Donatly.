@@ -18,13 +18,13 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
           - Identifying common Myths and spilling the beans, i.e., the Reality.
       2. Call for Assistance
           - A section for 24*7 customer assistance helpline number.
-      3. Section describing our Services
+      3. Donors and Recipients across the Globe
           - We focus on creating and expanding a virtual army of blood/organ donating volunteers who could be searched and contacted further by the patients in times of need.
       4. Banks Nearby
           - Blood Banks
           - Organ Banks
           - Hospitals Nearby
-          - Info on Oxygen Cylinders
+          - Info on Oxygen Cylinders(Provided by multiple companies)
       5. Section on Events/News
           - More information is always better than less. 
           - When people know the reason things are happening, even if it's bad news, they can adjust their expectations and react accordingly. 
