@@ -36,7 +36,7 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
           - Linked with GitHub, LinkedIn and Instagram of all Team Members.
           - Hover option on cursor proximity.
       8. Contact 
-          - Methods on how to contact us post receiving or performing donations.
+          - Methods on how to contact us regarding queries post receiving or performing donations.
           - We will provide you excellent medical guidance/supervision for the same.
           - Includes - Location on Map, Phone, EMail, Form for Drafting Message(Responsive).
       9. Footer
@@ -77,6 +77,7 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
  ## Host Links and Other Resources
     - YouTube Video - 
     - DevPost Project - 
+    - Heroku Hosted Link -
 
  ## Team Members
   - Abhinav Aggrawal
