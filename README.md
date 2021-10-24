@@ -47,13 +47,14 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - This is an awareness page for people to understand what could be the possible impacts of donations on people, be it, Receiver or the person Donating.
     - Contains a self-customized Scroll Bar.
 3. Registration Form
-    - Contains a form with details to fill for donating, for receiving the same.
+    - Contains a form with details to fill for donating, or for receiving the same.
     - Has fields like Personal Details, Fitness details, Documents, etc.
 4. Test your Fitness  
     - This page has features that used Tenserflow.
     - You can do few fitness exercises to keep yourself fit.
 5. Banks/Hospitals/Oxygen Resources
     - Option to search banks and hospitals around your location.
+    - Medical Providers: Provision from Industrially acclaimed companies for Medical Oxygen.
 6. Events & News
     - Gives you options to find and register for donation drives and camps around.
     - This page can provide you with latest updates revolving around blood and organ donation(s).
@@ -73,6 +74,8 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - Integration of SAWO Labs was something where we struggled at initially, but this proved out very helpful, as all the authentication, including OTPs are navigated through this interface.
 6. Chatbot
     - Our pages contain a snatchbot-based chatbot, where automated responses work out a series of questions to fill respective data.
+7. PayPal Rest API
+    - In the "Donate Us" Page, the use of PayPal Rest API enables the users to make donations to us.
     
  ## Host Links and Other Resources
     - YouTube Video - 
