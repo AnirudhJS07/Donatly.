@@ -81,11 +81,34 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - Providing Exclusive content and No Ads feature for Coil Members.
     
  ## Host Links and Other Resources
-    - YouTube Video - 
-    - DevPost Project - 
+    - YouTube Video - https://youtu.be/k_UwNl4Bf2Q
+    - DevPost Project - https://devpost.com/software/donatly
     - Heroku Hosted Link - https://donatly.herokuapp.com/
 
- ## Team Members
+ ## View Pictures of the Project:
+![Organ Banks](https://user-images.githubusercontent.com/76525607/138582650-943587ef-517b-4274-a8f6-22707701bb18.jpeg)
+![Oxygen Cylinders](https://user-images.githubusercontent.com/76525607/138582651-e0c51efb-6514-4923-becb-67e678899ed4.jpeg)
+![Read More IMG2](https://user-images.githubusercontent.com/76525607/138582652-79dcb2b2-9f31-4894-acb7-31c53730647e.jpeg)
+![Read More](https://user-images.githubusercontent.com/76525607/138582653-bbe0b2e2-f4c5-405c-9345-174bd22316d3.jpeg)
+![Statistics - Read More](https://user-images.githubusercontent.com/76525607/138582655-f3f7790f-89a8-47be-85ea-189d8a713029.jpeg)
+![Testimonials](https://user-images.githubusercontent.com/76525607/138582656-8881076a-d9a8-46b2-94be-eb17ae51fb61.jpeg)
+![About - Team](https://user-images.githubusercontent.com/76525607/138582626-ee016b23-1237-4bb4-b9f0-843a178d2a74.jpeg)
+![About Us Section](https://user-images.githubusercontent.com/76525607/138582627-d7821ade-3847-4cae-8efd-7c52e91ee93a.jpeg)
+![Banks Nearby](https://user-images.githubusercontent.com/76525607/138582628-3af31783-db5f-4ef7-8763-4124dfcacadb.jpeg)
+![Blood Banks](https://user-images.githubusercontent.com/76525607/138582630-8f2f29d4-6268-4720-aa90-6b02a65587b7.jpeg)
+![ChatBot](https://user-images.githubusercontent.com/76525607/138582631-4f7adaae-2ab6-45cf-bfe5-23144cef0adf.jpeg)
+![Coil](https://user-images.githubusercontent.com/76525607/138582632-d39062ff-8eb2-4b03-b1d6-4154b4355893.jpeg)
+![Contact](https://user-images.githubusercontent.com/76525607/138582633-de17ba8d-6733-459d-9b91-38b7b4ec59e4.jpeg)
+![Donor-Recipient](https://user-images.githubusercontent.com/76525607/138582635-acdbdbf5-51c8-4ce7-b09b-ac8b9d7eeeaa.jpeg)
+![Donors Across the Globe](https://user-images.githubusercontent.com/76525607/138582636-0ca7fb05-feff-4780-a309-cd4a52a3f709.jpeg)
+![Events and News - Detailed View](https://user-images.githubusercontent.com/76525607/138582638-67cff0c2-58a4-4c9b-838c-95ab16ac9f55.jpeg)
+![Events and News](https://user-images.githubusercontent.com/76525607/138582639-88fdf1cb-e23d-42fd-ad1e-3d2e9da6e785.jpeg)
+![Footer](https://user-images.githubusercontent.com/76525607/138582640-81d30da7-6a1b-4372-af94-486775cd90ab.jpeg)
+![Home Page](https://user-images.githubusercontent.com/76525607/138582644-40afa186-ca8f-4a28-b609-cd00bb8aa177.jpeg)
+![Hospitals Nearby](https://user-images.githubusercontent.com/76525607/138582645-e6b943b0-cdd9-4dbc-ba3f-8bc8d284165d.jpeg)
+![Mail](https://user-images.githubusercontent.com/76525607/138582649-840623db-3251-405d-bfc7-891134434a61.jpeg)
+
+## Team Members
   - Abhinav Aggrawal
   - Anirudh Sharma
   - Shreya Joshi
