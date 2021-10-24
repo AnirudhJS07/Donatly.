@@ -8,11 +8,11 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
 
 ### Pages
 1. Landing Page
-    - The Landing Page is the collection of all content and is the common link to all pages.
+    - The Landing Page is the collection of all content and is the common link to the rest pages.
     - There is a presence of a Chat-bot(On the bottom right corner of the page), with an automated quiz section.
-    - A small description to the organization Donatly. is mentioned on the page.
-    - Additionally, there are buttons that redirect you to sections of the web project. 
-    - A customized Logo has been created for Donatly. using "Canva" tools.
+    - A description to the organization Donatly. is mentioned on the page.
+    - Additionally, there are links in the NavBar that redirect you to sections of the web project. 
+    - A customized Logo has been created for Donatly. using "Wix" tools.
     
       1. Myths and Reality
           - Identifying common Myths and spilling the beans, i.e., the Reality.
@@ -67,7 +67,7 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
 2. Scroll bar
     - A self customized Scroll bar to make the page more interactive.
 3. Customized Logo
-    - We developed our own logo using "Canva" and its tools.
+    - We developed our own logo using "Wix" and its tools.
 4. Tab Symbol for Icon
     - In the <head> section of the HTML File, we have represented the icon, i.e, just the image part of the logo in the tab.
 5. SAWO Labs Integration
