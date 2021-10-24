@@ -77,13 +77,13 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
 7. PayPal Rest API
     - In the "Donate Us" Page, the use of PayPal Rest API enables the users to make donations to us.
 8. Coil 
-    - Our site has been digitally monetized using 'Coil'.
+    - Our site has been digitally web monetized using 'Coil'.
     - Providing Exclusive content and No Ads feature for Coil Members.
     
  ## Host Links and Other Resources
     - YouTube Video - 
     - DevPost Project - 
-    - Heroku Hosted Link -
+    - Heroku Hosted Link - https://donatly.herokuapp.com/
 
  ## Team Members
   - Abhinav Aggrawal
