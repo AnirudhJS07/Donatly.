@@ -47,7 +47,7 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - This is an awareness page for people to understand what could be the possible impacts of donations on people, be it, Receiver or the person Donating.
     - Contains a self-customized Scroll Bar.
 3. Registration Form
-    - Contains a form with details to fill for donating.
+    - Contains a form with details to fill for donating, for receiving the same.
     - Has fields like Personal Details, Fitness details, Documents, etc.
 4. Test your Fitness  
     - This page has features that used Tenserflow.
