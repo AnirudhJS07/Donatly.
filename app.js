@@ -197,8 +197,8 @@ app.post('/donateus', (req, res) => {
         "payment_method": "paypal"
     },
     "redirect_urls": {
-        "return_url": "http://donatly.herokuapp.com/success",
-        "cancel_url": "http://donatly.herokuapp.com/cancel"
+        "return_url": "http://localhost:3000/success",
+        "cancel_url": "http://localhost:3000/cancel"
     },
     "transactions": [{
         "item_list": {
@@ -260,9 +260,28 @@ app.get('/success', (req, res) => {
         res.send('Success');
         const newdonation = new Donation({
           details: JSON.stringify(payment)
-        })
+        });
 
-    }
+        newdonation.save(function(err){
+          if (!err){
+            console.log(error);
+        }
+       
+        });
+
+        // twillo
+
+      const accountSid = process.env.TWILLO_SID;
+      const authToken = process.env.TWILLO_AUTH;
+      const client = require('twilio')(accountSid, authToken);
+
+      client.messages.create({
+          body: 'there is a new donation',
+          from: process.env.TWILLO_NUMBER,
+          to: process.env.MY_NUMBER,
+        })
+        .then(message => console.log(message.sid));
+          }
 });
 });
 
@@ -271,11 +290,16 @@ app.get('/cancel', (req, res) => res.send('Cancelled'));
 
 
 
+  
 
 
 
 app.get("/", function(req, res){
   res.render("index");
+});
+
+app.get("/choice", function(req, res){
+  res.render("choice");
 });
 
 app.get("/about", function(req, res){
