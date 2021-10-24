@@ -76,6 +76,9 @@ Donatly. is a non-profit movement empowering the awareness for blood and organ d
     - Our pages contain a snatchbot-based chatbot, where automated responses work out a series of questions to fill respective data.
 7. PayPal Rest API
     - In the "Donate Us" Page, the use of PayPal Rest API enables the users to make donations to us.
+8. Coil 
+    - Our site has been digitally monetized using 'Coil'.
+    - Providing Exclusive content and No Ads feature for Coil Members.
     
  ## Host Links and Other Resources
     - YouTube Video - 
